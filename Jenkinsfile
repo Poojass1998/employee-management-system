@@ -13,7 +13,7 @@ pipeline {
                     cd terraform
                     terraform fmt
                     terraform validate
-                    terraform init
+                    terraform init -input=false
                     terraform plan
                     terraform apply -auto-approve
                 '''
